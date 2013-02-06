@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+     >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomplayer"
+
+        >
+        
+        <TextView
+        android:id="@+id/downtext"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="AlbumInfo" />
+
+        	    <ImageButton
+		android:id="@+id/nexttrack"
+		android:src="@drawable/nexttrack"
+        android:background="@null"
+		android:onClick="ButtonOnClick"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="30dp"
+		android:layout_centerVertical="true" />
+        	    
+        <ImageButton
+		android:id="@+id/play"
+		android:src="@drawable/play"
+        android:background="@null"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@id/nexttrack"
+		android:layout_marginRight="20dp"
+		android:layout_centerVertical="true" />
+        
+        <ImageButton
+		android:id="@+id/previoustrack"
+		android:src="@drawable/previoustrack"
+        android:background="@null"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@id/play"
+		android:layout_marginRight="20dp"
+		android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

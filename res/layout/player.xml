@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Simplayer"
+    android:background="#000000" >
+
+	<TextView
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@drawable/progressbar"
+		android:layout_marginLeft="0dp"
+        android:layout_marginTop="430dp" />
+
+	<ImageView 
+	    android:id="@+id/cover"
+	    android:layout_height="200dp"
+	    android:layout_width="200dp"
+	    android:layout_marginTop="0dp" />
+
+	    <ImageButton
+		android:id="@+id/browse"
+		android:src="@drawable/browse"
+        android:background="@null"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+        android:layout_marginTop="480dp" />
+	    
+	    <ImageButton
+		android:id="@+id/bprevioustrack"
+		android:src="@drawable/previoustrack"
+        android:background="@null"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="80dp"
+        android:layout_marginTop="480dp" />
+
+        <ImageButton
+        android:id="@+id/playbutton"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="480dp" />
+
+        
+	    <ImageButton
+		android:id="@+id/bnexttrack"
+		android:src="@drawable/nexttrack"
+        android:background="@null"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="200dp"
+        android:layout_marginTop="480dp" />
+	    
+        <ImageButton
+        android:id="@+id/stopbutton"
+        android:src="@drawable/stop"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="480dp" />
+
+    <TextView
+        android:id="@+id/titelInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp" />
+    
+    <TextView
+        android:id="@+id/albumInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:layout_marginTop="400dp" />
+    
+        <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="440dp" />
+        
+        <TextView
+        android:id="@+id/current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="440dp" />
+
+</RelativeLayout>
